@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TableWatch" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="gKs-gy-RNl">
+                            <items>
+                                <tableRow identifier="tableRow" id="1Xw-3P-NgG" customClass="TableRow" customModule="TableWatch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="3bh-YJ-FFW">
+                                        <items>
+                                            <label width="1" height="1" alignment="left" text="Label" textAlignment="center" id="dtI-hU-lBk"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblText" destination="dtI-hU-lBk" id="ODL-9w-hOM"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <group width="1" alignment="left" id="KZQ-0N-LkQ">
+                            <items>
+                                <button width="1" alignment="left" title="More" id="SSI-T3-x3W">
+                                    <connections>
+                                        <action selector="showMore" destination="AgC-eL-Hgc" id="62j-Wl-i2I"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="btnMore" destination="SSI-T3-x3W" id="TNn-Dd-2Sb"/>
+                        <outlet property="table" destination="gKs-gy-RNl" id="BNo-fK-0lK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="250" y="389"/>
+        </scene>
+    </scenes>
+</document>

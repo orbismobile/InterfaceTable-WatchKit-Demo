@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TableWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>087AF44E1C32FAF700C6D034</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>087AF4651C32FB2800C6D034</key>
 		<dict>
 			<key>primary</key>
 			<true/>

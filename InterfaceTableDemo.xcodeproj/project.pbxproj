@@ -12,7 +12,57 @@
 		087AF4581C32FAF700C6D034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 087AF4561C32FAF700C6D034 /* Main.storyboard */; };
 		087AF45A1C32FAF700C6D034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 087AF4591C32FAF700C6D034 /* Assets.xcassets */; };
 		087AF45D1C32FAF700C6D034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 087AF45B1C32FAF700C6D034 /* LaunchScreen.storyboard */; };
+		087AF46A1C32FB2800C6D034 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 087AF4681C32FB2800C6D034 /* Interface.storyboard */; };
+		087AF46C1C32FB2800C6D034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 087AF46B1C32FB2800C6D034 /* Assets.xcassets */; };
+		087AF4731C32FB2800C6D034 /* TableWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 087AF4721C32FB2800C6D034 /* TableWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		087AF4781C32FB2800C6D034 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087AF4771C32FB2800C6D034 /* InterfaceController.swift */; };
+		087AF47A1C32FB2800C6D034 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087AF4791C32FB2800C6D034 /* ExtensionDelegate.swift */; };
+		087AF47C1C32FB2800C6D034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 087AF47B1C32FB2800C6D034 /* Assets.xcassets */; };
+		087AF4801C32FB2800C6D034 /* TableWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 087AF4661C32FB2800C6D034 /* TableWatch.app */; };
+		087AF48C1C32FCA500C6D034 /* TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087AF48B1C32FCA500C6D034 /* TableRow.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		087AF4741C32FB2800C6D034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 087AF4471C32FAF700C6D034 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 087AF4711C32FB2800C6D034;
+			remoteInfo = "TableWatch Extension";
+		};
+		087AF47E1C32FB2800C6D034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 087AF4471C32FAF700C6D034 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 087AF4651C32FB2800C6D034;
+			remoteInfo = TableWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		087AF4841C32FB2800C6D034 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				087AF4731C32FB2800C6D034 /* TableWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087AF4881C32FB2800C6D034 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				087AF4801C32FB2800C6D034 /* TableWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		087AF44F1C32FAF700C6D034 /* InterfaceTableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterfaceTableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +72,27 @@
 		087AF4591C32FAF700C6D034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		087AF45C1C32FAF700C6D034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		087AF45E1C32FAF700C6D034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		087AF4661C32FB2800C6D034 /* TableWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		087AF4691C32FB2800C6D034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		087AF46B1C32FB2800C6D034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		087AF46D1C32FB2800C6D034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		087AF4721C32FB2800C6D034 /* TableWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TableWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		087AF4771C32FB2800C6D034 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		087AF4791C32FB2800C6D034 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		087AF47B1C32FB2800C6D034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		087AF47D1C32FB2800C6D034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		087AF48B1C32FCA500C6D034 /* TableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		087AF44C1C32FAF700C6D034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087AF46F1C32FB2800C6D034 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				087AF4511C32FAF700C6D034 /* InterfaceTableDemo */,
+				087AF4671C32FB2800C6D034 /* TableWatch */,
+				087AF4761C32FB2800C6D034 /* TableWatch Extension */,
 				087AF4501C32FAF700C6D034 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				087AF44F1C32FAF700C6D034 /* InterfaceTableDemo.app */,
+				087AF4661C32FB2800C6D034 /* TableWatch.app */,
+				087AF4721C32FB2800C6D034 /* TableWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +135,28 @@
 			path = InterfaceTableDemo;
 			sourceTree = "<group>";
 		};
+		087AF4671C32FB2800C6D034 /* TableWatch */ = {
+			isa = PBXGroup;
+			children = (
+				087AF4681C32FB2800C6D034 /* Interface.storyboard */,
+				087AF46B1C32FB2800C6D034 /* Assets.xcassets */,
+				087AF46D1C32FB2800C6D034 /* Info.plist */,
+			);
+			path = TableWatch;
+			sourceTree = "<group>";
+		};
+		087AF4761C32FB2800C6D034 /* TableWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				087AF4771C32FB2800C6D034 /* InterfaceController.swift */,
+				087AF48B1C32FCA500C6D034 /* TableRow.swift */,
+				087AF4791C32FB2800C6D034 /* ExtensionDelegate.swift */,
+				087AF47B1C32FB2800C6D034 /* Assets.xcassets */,
+				087AF47D1C32FB2800C6D034 /* Info.plist */,
+			);
+			path = "TableWatch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +167,51 @@
 				087AF44B1C32FAF700C6D034 /* Sources */,
 				087AF44C1C32FAF700C6D034 /* Frameworks */,
 				087AF44D1C32FAF700C6D034 /* Resources */,
+				087AF4881C32FB2800C6D034 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				087AF47F1C32FB2800C6D034 /* PBXTargetDependency */,
 			);
 			name = InterfaceTableDemo;
 			productName = InterfaceTableDemo;
 			productReference = 087AF44F1C32FAF700C6D034 /* InterfaceTableDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		087AF4651C32FB2800C6D034 /* TableWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 087AF4851C32FB2800C6D034 /* Build configuration list for PBXNativeTarget "TableWatch" */;
+			buildPhases = (
+				087AF4641C32FB2800C6D034 /* Resources */,
+				087AF4841C32FB2800C6D034 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				087AF4751C32FB2800C6D034 /* PBXTargetDependency */,
+			);
+			name = TableWatch;
+			productName = TableWatch;
+			productReference = 087AF4661C32FB2800C6D034 /* TableWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		087AF4711C32FB2800C6D034 /* TableWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 087AF4811C32FB2800C6D034 /* Build configuration list for PBXNativeTarget "TableWatch Extension" */;
+			buildPhases = (
+				087AF46E1C32FB2800C6D034 /* Sources */,
+				087AF46F1C32FB2800C6D034 /* Frameworks */,
+				087AF4701C32FB2800C6D034 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TableWatch Extension";
+			productName = "TableWatch Extension";
+			productReference = 087AF4721C32FB2800C6D034 /* TableWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +224,12 @@
 				ORGANIZATIONNAME = Orbis;
 				TargetAttributes = {
 					087AF44E1C32FAF700C6D034 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					087AF4651C32FB2800C6D034 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					087AF4711C32FB2800C6D034 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -113,6 +248,8 @@
 			projectRoot = "";
 			targets = (
 				087AF44E1C32FAF700C6D034 /* InterfaceTableDemo */,
+				087AF4651C32FB2800C6D034 /* TableWatch */,
+				087AF4711C32FB2800C6D034 /* TableWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +265,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		087AF4641C32FB2800C6D034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087AF46C1C32FB2800C6D034 /* Assets.xcassets in Resources */,
+				087AF46A1C32FB2800C6D034 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087AF4701C32FB2800C6D034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087AF47C1C32FB2800C6D034 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +294,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		087AF46E1C32FB2800C6D034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087AF47A1C32FB2800C6D034 /* ExtensionDelegate.swift in Sources */,
+				087AF4781C32FB2800C6D034 /* InterfaceController.swift in Sources */,
+				087AF48C1C32FCA500C6D034 /* TableRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		087AF4751C32FB2800C6D034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 087AF4711C32FB2800C6D034 /* TableWatch Extension */;
+			targetProxy = 087AF4741C32FB2800C6D034 /* PBXContainerItemProxy */;
+		};
+		087AF47F1C32FB2800C6D034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 087AF4651C32FB2800C6D034 /* TableWatch */;
+			targetProxy = 087AF47E1C32FB2800C6D034 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		087AF4561C32FAF700C6D034 /* Main.storyboard */ = {
@@ -157,6 +334,14 @@
 				087AF45C1C32FAF700C6D034 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		087AF4681C32FB2800C6D034 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				087AF4691C32FB2800C6D034 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -265,6 +450,66 @@
 			};
 			name = Release;
 		};
+		087AF4821C32FB2800C6D034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TableWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pe.com.orbis.InterfaceTableDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		087AF4831C32FB2800C6D034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TableWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pe.com.orbis.InterfaceTableDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		087AF4861C32FB2800C6D034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = TableWatch_Extension;
+				INFOPLIST_FILE = TableWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.com.orbis.InterfaceTableDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		087AF4871C32FB2800C6D034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = TableWatch_Extension;
+				INFOPLIST_FILE = TableWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.com.orbis.InterfaceTableDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -282,6 +527,22 @@
 			buildConfigurations = (
 				087AF4621C32FAF700C6D034 /* Debug */,
 				087AF4631C32FAF700C6D034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		087AF4811C32FB2800C6D034 /* Build configuration list for PBXNativeTarget "TableWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087AF4821C32FB2800C6D034 /* Debug */,
+				087AF4831C32FB2800C6D034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		087AF4851C32FB2800C6D034 /* Build configuration list for PBXNativeTarget "TableWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087AF4861C32FB2800C6D034 /* Debug */,
+				087AF4871C32FB2800C6D034 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
