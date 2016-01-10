@@ -14,19 +14,22 @@ class InterfaceController: WKInterfaceController {
     
     @IBOutlet var table: WKInterfaceTable!
     @IBOutlet var btnMore: WKInterfaceButton!
+    @IBOutlet var footer: WKInterfaceGroup!
     
     let data = ["1","2","3","4","5","6","7","8","9","10"]
     var numberRow: Int!
+    var itemsForpage = 2
+    var numberOfPage = 1
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         self.numberRow = 0
-        printTable(self.numberRow, limitRow: 5)
+        printTable(self.numberRow, limitRow: self.itemsForpage)
     }
     
     
     @IBAction func showMore() {
-        printTable(self.numberRow, limitRow: 10)
+        printTable(self.numberRow, limitRow: self.numberOfPage*self.itemsForpage)
     }
     
     func printTable(numberRow: Int, limitRow: Int) -> Void {
@@ -37,9 +40,10 @@ class InterfaceController: WKInterfaceController {
             }
         }
         self.numberRow = self.table.numberOfRows
-        if self.numberRow ==  10 {
+        if self.numberRow ==  self.data.count {
             self.btnMore.setHidden(true)
         }
+        self.numberOfPage++
     }
 
     override func willActivate() {
