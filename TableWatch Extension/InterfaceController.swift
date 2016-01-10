@@ -33,7 +33,7 @@ class InterfaceController: WKInterfaceController {
         for index in numberRow..<limitRow {
             self.table.insertRowsAtIndexes(NSIndexSet(index: index), withRowType: "tableRow")
             if let rowController = self.table.rowControllerAtIndex(index) as? TableRow {
-                rowController.lblText.setText(data[index])
+                rowController.lblText.setText(self.data[index])
             }
         }
         self.numberRow = self.table.numberOfRows
